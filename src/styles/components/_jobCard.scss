@@ -1,0 +1,34 @@
+.jobcard {
+    border: 2px solid rgba($aqua, 0.25);
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: rgba(white, 0.5);
+    .jobcard_title {
+        @extend .d-flex;
+        align-items: center;
+        padding-bottom: 1rem;
+        .jobcard_title_img {
+            @extend .center-bg;
+            width: 7.5rem;
+            height: 7.5rem;
+            border-radius: 100%;
+            background-color: white;
+            margin-right: 2rem;
+            border: 1px solid rgba($aqua, 0.25);
+        }
+    }
+    .jobcard_list {
+        list-style: none;
+        padding-left: 0;
+        .jobcard_tag {
+            @extend .btn-secondary;
+            display: inline-block;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+        }
+    }
+    .jobcard_btn {
+        margin-right: 1rem;
+    }
+}

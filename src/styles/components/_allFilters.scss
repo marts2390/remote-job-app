@@ -1,0 +1,18 @@
+.allfilters {
+    .allfilters_toggle {
+       @extend .btn-primary;
+       background: $aqua; 
+       width: auto;
+    }
+    .allfilters_list {
+        list-style: none;
+        padding-left: 0;
+    }
+    .allfilters_list_item {
+        display: inline-block;
+        margin: 0.5rem;
+    }
+    .allfilters_list_item_btn {
+        @extend .btn-secondary;
+    }
+}

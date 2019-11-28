@@ -1,0 +1,61 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: $m-size;
+    background: $primary;
+}
+
+button {
+    cursor: pointer;
+
+}
+
+button:disabled {
+    cursor: default;
+}
+
+.transition {
+    -webkit-transition: 200ms ease-out 100ms;
+    -moz-transition: 200ms ease-out 100ms;
+    -o-transition: 200ms ease-out 100ms;
+    transition: 200ms ease-out 100ms;
+}
+
+.btn-primary {
+    @extend .transition;
+    color: $off-black;
+    border: 1px solid rgba($off-black, 0.5);
+    background: $primary;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    padding: 0.5rem 2rem;
+    width: 100%;
+    font-size: $s-size;
+
+    &:hover {
+        background: $aqua;
+    }
+}
+
+.btn-secondary {
+    @extend .transition;
+    border: 1px solid $off-black;
+    border-radius: 2rem;
+    background: transparent;
+    padding: 0.5rem 2rem;
+    color: black;
+    font-size: $s-size;
+    font-weight: 300;
+    &:hover {
+        background: $aqua;
+    }
+}
+
+.center-bg {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
