@@ -1,8 +1,14 @@
-@import './node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css?family=Anton|Nunito:400,600|Shadows+Into+Light&display=swap');
+
 @import './base/settings';
+@import './node_modules/bootstrap/scss/bootstrap.scss';
 @import './base/base';
+
+
 @import './components/filters';
 @import './components/allFilters';
 @import '/components/jobCard';
 @import './components/RemoteJobApp';
+@import './components/textFilter';
+
 

@@ -5,7 +5,7 @@ html {
 body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: $m-size;
-    background: $primary;
+    background: $off-white;
 }
 
 button {
@@ -24,20 +24,58 @@ button:disabled {
     transition: 200ms ease-out 100ms;
 }
 
+a {
+    @extend .transition;
+    color: $off-black;
+
+    &:hover {
+        color: $off-black;
+    }
+}
+
+h1,
+h2 {
+    font-family: $title-font;
+}
+
+p,
+li,
+a {
+    font-family: $body-font;
+}
+
+p {
+    margin-bottom: 0;
+}
+
 .btn-primary {
     @extend .transition;
     color: $off-black;
-    border: 1px solid rgba($off-black, 0.5);
+    border: 1px solid rgba($aqua, 0.5);
     background: $primary;
-    border-radius: 1rem;
+    border-radius: 2rem;
     text-transform: uppercase;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
     width: 100%;
     font-size: $s-size;
+    font-family: $body-font;
+    font-weight: 600;
 
     &:hover {
         background: $aqua;
+        border: 1px solid rgba($aqua, 0.5);
     }
+
+    &:active {
+        background: $aqua !important;
+    }
+    &:focus {
+        background: $aqua !important;
+    }
+}
+
+button:focus {
+    outline: none;
 }
 
 .btn-secondary {
@@ -49,7 +87,10 @@ button:disabled {
     color: black;
     font-size: $s-size;
     font-weight: 300;
-    &:hover {
+    font-family: $body-font;
+    font-weight: 600;
+
+    &:hover, active {
         background: $aqua;
     }
 }
